@@ -460,13 +460,13 @@ ul.nav li.active a:before {
 	text-align: center;
 	width: 64px;
 	border-radius: 100%;
-	color: #e73131;
+	color: #BA8C63;
 	border:1px solid #d7d7d7;
 	transition: background-color 400ms, background-color 400ms;
 	position: relative;
 }
 .media.service-box:hover .pull-left > i {
-	background:#e73131;
+	background:#BA8C63;
 	color:#fff;
 	transform:rotateY(360deg);
 	-moz-transform:rotate(360deg);
@@ -503,7 +503,7 @@ ul.nav li.active a:before {
 	padding-right: 12px;
 	font-size: 12px;
 	font-weight: 600;
-	background:#e73131;
+	background:#BA8C63;
 }
 .progress .progress-bar.six-sec-ease-in-out {
 	-webkit-transition: width 2s ease-in-out;
@@ -528,7 +528,7 @@ ul.nav li.active a:before {
 }
 #features .nav-tabs > li.active > a, #features .nav-tabs > li.active > a:hover, #features .nav-tabs > li.active > a:focus {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, .26);
-	border-bottom:2px solid #e73131;
+	border-bottom:2px solid #BA8C63;
 	background:#f8f8f8;
 }
 #features .nav-tabs > li > a {
@@ -549,7 +549,7 @@ ul.nav li.active a:before {
 	font-size:25px;
 }
 #features .nav-tabs > li.active > a i.fa {
-	color:#e73131;
+	color:#BA8C63;
 }
 #features .nav-tabs > li > a:hover {
 	border-color:transparent;
@@ -599,7 +599,7 @@ ul.nav li.active a:before {
 	position: relative;
 }
 #portfolio .portfolio-filter > li a:hover, #portfolio .portfolio-filter > li a.active {
-	background: #e73131;
+	background: #BA8C63;
 	color: #fff;
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
@@ -619,7 +619,7 @@ ul.nav li.active a:before {
 	margin-left: -10px;
 	border-width: 10px;
 	border-style: solid;
-	border-color: #e73131 transparent transparent transparent;
+	border-color:#BA8C63 transparent transparent transparent;
 }
 #portfolio .portfolio-filter > li:first-child a {
 	border-radius: 4px 0 0 4px;
@@ -656,7 +656,7 @@ ul.nav li.active a:before {
 }
 #portfolio .portfolio-item:hover .portfolio-info i.fa {
 	font-size:30px;
-	color:#e73131;
+	color:##BA8C63;
 }
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
@@ -747,9 +747,9 @@ ul.nav li.active a:before {
 	display: inline-block;
 	width: 116px;
 	height: 116px;
-	background-image: -moz-linear-gradient(90deg, #e73131 0%, #e73131 100%);
-	background-image: -webkit-linear-gradient(90deg, #e73131 0%, #e73131 100%);
-	background-image: -ms-linear-gradient(90deg, #e73131 0%, #e73131 100%);
+	background-image: -moz-linear-gradient(90deg, #BA8C63 0%, #BA8C63 100%);
+	background-image: -webkit-linear-gradient(90deg, #BA8C63 0%,#BA8C63 100%);
+	background-image: -ms-linear-gradient(90deg, #BA8C63 0%, #BA8C63 100%);
 	color: #fff;
 	border-radius: 100px;
 	border: 5px solid #f6f6f6;
@@ -813,7 +813,7 @@ ul.nav li.active a:before {
 	transition-duration: 0.3s;
 }
 .team-main-sec:hover h5 {
-	color:#e73131;
+	color:##BA8C63;
 }
 .team-sec h5 {
 	color:#555;
