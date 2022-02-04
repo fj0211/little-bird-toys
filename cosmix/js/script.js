@@ -7,23 +7,23 @@
 
  /* ==============================================
   	 Main-Slider
-  	=============================================== */ 
+  	=============================================== */
 $(document).ready(function() {
- 
+
   var owl = $("#owl-slider");
- 
+
   owl.owlCarousel({
  autoPlay: 3000, //Set AutoPlay to 3 seconds
     singleItem : true,
     transitionStyle : "fade"
   });
- 
+
 });
 
 
  /* ==============================================
   	  Progress Bar
-  	=============================================== */ 
+  	=============================================== */
 		$('.experience').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
 		if (visible) {
 			$.each($('div.progress-bar'),function(){
@@ -33,10 +33,10 @@ $(document).ready(function() {
 		}
 	});
 
-	
+
  /* ==============================================
   	 Preloader
-  	=============================================== */ 
+  	=============================================== */
 
 	(function () {
 	    $(window).load(function() {
@@ -52,36 +52,36 @@ $(document).ready(function() {
      $("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
 	});
- 
+
  /* ==============================================
-  	  WOW Javascripts 
-  	=============================================== */ 
+  	  WOW Javascripts
+  	=============================================== */
 
  new WOW().init();
 
  /* ==============================================
   	  Testimonials
-  	=============================================== */ 
+  	=============================================== */
 
 
 $(document).ready(function() {
- 
+
   var owl = $("#owl-testi");
- 
+
   owl.owlCarousel({
     autoPlay: 3000, //Set AutoPlay to 3 seconds
     singleItem : true,
     transitionStyle : "fade"
   });
- 
+
 });
- 
- 
+
+
  /* ==============================================
   	  Smooth Scroll
-  	=============================================== */ 
-	
-	
+  	=============================================== */
+
+
     $(function() {
       $('a.scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -96,14 +96,14 @@ $(document).ready(function() {
         }
       });
     });
-	
+
 
 
  /* ==============================================
   	  Navbar-Fixed-Top
-  	=============================================== */ 
-	
-	
+  	=============================================== */
+
+
  $(window).bind('scroll', function() {
         var navHeight = $(window).height() - 100;
         if ($(window).scrollTop() > navHeight) {
@@ -116,17 +116,17 @@ $(document).ready(function() {
 
  /* ==============================================
   	 ToolTip
-  	=============================================== */ 
-	
+  	=============================================== */
+
 	$(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
-	
+
 
  /* ==============================================
-  	  Nice Scroll 
-  	=============================================== */ 
-	
+  	  Nice Scroll
+  	=============================================== */
+
 	$("html").niceScroll({
 		scrollspeed: 100,
 		mousescrollstep: 38,
@@ -138,11 +138,11 @@ $(document).ready(function() {
 		horizrailenabled: false,
 		cursorborderradius: 0,
 	});
-	
+
 
 /* ==============================================
   	  Count
-  	=============================================== */ 
+  	=============================================== */
 
     $('#fun-facts').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
 		if (visible) {
@@ -159,13 +159,13 @@ $(document).ready(function() {
 			$(this).unbind('inview');
 		}
 	});
-	
-	
+
+
 	/* ==============================================
   	  Clients
   	=============================================== */
-	
-	
+
+
     var owl = $("#client-slider");
 
     owl.owlCarousel({
@@ -184,12 +184,12 @@ $(document).ready(function() {
        autoPlay: 3000, //Set AutoPlay to 3 seconds
 
     });
-	
+
 
 	/*====================================
     Portfolio Isotope Filter
     ======================================*/
-	
+
 	$(window).load(function(){'use strict';
 		var $portfolio_selectors = $('.portfolio-filter >li>a');
 		var $portfolio = $('.portfolio-items');
@@ -197,7 +197,7 @@ $(document).ready(function() {
 			itemSelector : '.portfolio-item',
 			layoutMode : 'fitRows'
 		});
-		
+
 		$portfolio_selectors.on('click', function(){
 			$portfolio_selectors.removeClass('active');
 			$(this).addClass('active');
@@ -206,8 +206,8 @@ $(document).ready(function() {
 			return false;
 		});
 	});
-	
-	
+
+
 /*====================================
     Fullscreen burger menu
  ======================================*/
@@ -236,33 +236,33 @@ $(document).ready(function() {
 	/*====================================
        Index-03-Main-Slider
     ======================================*/
-	
+
 $(document).ready(function() {
- 
+
   $("#owl-main-slider").owlCarousel({
- 
+
        autoPlay: 3000, //Set AutoPlay to 3 seconds
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem:true
- 
+
       // "singleItem:true" is a shortcut for:
-      // items : 1, 
+      // items : 1,
       // itemsDesktop : false,
       // itemsDesktopSmall : false,
       // itemsTablet: false,
       // itemsMobile : false
- 
+
   });
- 
+
 });
-	
-	
-	
+
+
+
 	 /* ==============================================
   	     Parallex-javascript
   	=============================================== */
-	
+
 	$('#testimonials').stellar();
 $('#slider-parallax').stellar();
 
@@ -284,22 +284,58 @@ $('#slider-parallax').stellar();
   	      Index-05-text-Slider
   	=============================================== */
 	$(document).ready(function() {
- 
+
   $("#owl-text-slider").owlCarousel({
- 
+
       autoPlay: 3000, //Set AutoPlay to 3 seconds
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem:true
- 
+
       // "singleItem:true" is a shortcut for:
-      // items : 1, 
+      // items : 1,
       // itemsDesktop : false,
       // itemsDesktopSmall : false,
       // itemsTablet: false,
       // itemsMobile : false
- 
+
   });
- 
+
 });
-	
+// Our JS ///
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
+
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
+  })
+})
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+  })
+})
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
+}
